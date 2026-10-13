@@ -1,0 +1,14 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app/
+
+    level: 8
+
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+
+    ignoreErrors:
+        - '#Class App\\Models\\[a-zA-Z]+ uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types#'
