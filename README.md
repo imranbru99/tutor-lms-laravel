@@ -1,12 +1,12 @@
 # TutorForge — Enterprise AI-Powered Learning Management System
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner.svg" alt="TutorForge Banner" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+  <img src="art/tutorforge-banner.svg" alt="TutorForge Master Banner" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
 </p>
 
 <p align="center">
   <strong>A Production-Grade, Multi-Tenant LMS Re-architecting Tutor LMS (v4.x) natively for Laravel.</strong><br>
-  <em>Featuring an Agentic AI Studio, Complete Global & Bangladesh Payment Gateway Layer, Multi-Panel Administration, and Native Bengali-First Unicode Localization.</em>
+  <em>Featuring an Agentic AI Studio, Complete Global &amp; Bangladesh Payment Gateway Layer, Multi-Panel Administration, and Native Bengali-First Unicode Localization.</em>
 </p>
 
 <p align="center">
@@ -17,6 +17,34 @@
   <a href="https://phpstan.org"><img src="https://img.shields.io/badge/Larastan-Level%208-brightgreen.svg?style=for-the-badge" alt="Larastan Level 8"></a>
   <a href="https://pestphp.com"><img src="https://img.shields.io/badge/Pest-3.x-ff4088.svg?style=for-the-badge" alt="Pest 3"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
+</p>
+
+---
+
+## 🖼️ Product Tour & Interface Previews
+
+### 1. Modern Course Catalog & Storefront (বাংলা &amp; English)
+*Live bilingual storefront featuring typo-tolerant Scout search, category filtering, sticky buy boxes, and multi-currency pricing in BDT (৳) and USD ($).*
+<p align="center">
+  <img src="art/landing-page-preview.svg" alt="TutorForge Storefront & Course Catalog Preview" width="100%" style="border-radius: 10px; border: 1px solid #334155; margin-bottom: 24px;">
+</p>
+
+### 2. Triple Admin &amp; Instructor Telemetry Dashboard
+*Powered by `imrandevbd/laravel-admin-panel` with real-time financial tracking, token budget governance, and live webhook reconciliation across `/admin`, `/instructor`, and `/org`.*
+<p align="center">
+  <img src="art/dashboard-preview.svg" alt="TutorForge Analytics & Telemetry Dashboard Preview" width="100%" style="border-radius: 10px; border: 1px solid #334155; margin-bottom: 24px;">
+</p>
+
+### 3. Continuous Distraction-Free Learning Player
+*SPA-feel continuous player featuring dynamic video watermarking, time-stamped note taking, curriculum navigation, offline-safe queueing, and Kids/Modern modes.*
+<p align="center">
+  <img src="art/learning-player-preview.svg" alt="TutorForge Continuous Learning Player Preview" width="100%" style="border-radius: 10px; border: 1px solid #334155; margin-bottom: 24px;">
+</p>
+
+### 4. Visual 3-Pane Course Builder &amp; AI Studio Co-Author
+*Visual drag-and-drop course builder with optimistic UI reordering, content bank imports, and full automated curriculum generation via `imrandevbd/laravel-ai-hub`.*
+<p align="center">
+  <img src="art/course-builder-preview.svg" alt="TutorForge Visual Course Builder & AI Studio Preview" width="100%" style="border-radius: 10px; border: 1px solid #334155; margin-bottom: 24px;">
 </p>
 
 ---
@@ -45,6 +73,7 @@
 - [Demo Credentials](#-demo-credentials)
 - [Testing & Quality Gates](#-testing--quality-gates)
 - [Continuous Integration (CI/CD)](#-continuous-integration-cicd)
+- [🤝 Let's Connect & Collaborate](#-lets-connect--collaborate)
 - [License](#-license)
 
 ---
@@ -65,14 +94,14 @@
 
 ## 🛠 Primary Technology Stack
 
-- **Framework:** Laravel 12.x (compatible with 11.x & 13.x), PHP 8.3+
+- **Framework:** Laravel 12.x (compatible with 11.x &amp; 13.x), PHP 8.3+
 - **Frontend (Learner Portal):** Blade + Livewire 3 + Alpine.js + Tailwind CSS 4 (`wire:navigate` SPA feel)
 - **Administration:** `imrandevbd/laravel-admin-panel` (Zero-build, Alpine.js 3, Tailwind, multi-panel engine)
 - **Database:** MySQL 8.0 (PostgreSQL-compatible schema) with SQLite in-memory test driver
 - **Caching & Locks:** Redis 7.x (tag-based cache invalidation, queue workers, atomic locks)
-- **Full-Text Search:** Laravel Scout with Meilisearch (typo-tolerant Bengali & English search)
+- **Full-Text Search:** Laravel Scout with Meilisearch (typo-tolerant Bengali &amp; English search)
 - **Queues & Scheduling:** Laravel Horizon with dedicated queues (`payments`, `emails`, `ai`, `pdf`, `media`, `default`)
-- **Realtime Events:** Laravel Reverb (WebSockets for notifications, live Q&A, and attendance)
+- **Realtime Events:** Laravel Reverb (WebSockets for notifications, live Q&amp;A, and attendance)
 - **Static Analysis & Testing:** Pest 3, Larastan Level 8, Laravel Pint, GitHub Actions CI
 
 ---
@@ -143,7 +172,7 @@ Built on a driver-based architecture (`App\Domain\Payments\PaymentGateway`) with
 | Region | Supported Gateways | Capabilities |
 |---|---|---|
 | **Global Cards & Wallets** | **Stripe** (Checkout, Elements, Billing, Connect)<br>**PayPal** (Orders v2, Subscriptions)<br>**Paddle**<br>**Razorpay**<br>**Mollie**<br>**Paystack**<br>**Flutterwave**<br>**Authorize.net** | Cards, Apple Pay, Google Pay, recurring subscriptions, instant refunds, automated payouts. |
-| **Bangladesh (Native)** | **bKash** (Tokenized Checkout & Recurring Agreements)<br>**Nagad**<br>**Rocket**<br>**SSLCommerz**<br>**aamarPay**<br>**ShurjoPay**<br>**UpayPay** | MFS payments, tokenized recurring billing, automated IPN verification, local currency settlements. |
+| **Bangladesh (Native)** | **bKash** (Tokenized Checkout &amp; Recurring Agreements)<br>**Nagad**<br>**Rocket**<br>**SSLCommerz**<br>**aamarPay**<br>**ShurjoPay**<br>**UpayPay** | MFS payments, tokenized recurring billing, automated IPN verification, local currency settlements. |
 | **Offline & Manual** | **Bank Wire Transfer**<br>**Cash on Delivery**<br>**Manual Mobile Money (TrxID + Receipt Proof)** | Admin verification queue, receipt proof upload, automated enrollment activation upon approval. |
 
 ### 6. Deep Agentic AI Layer (20+ Features)
@@ -209,6 +238,7 @@ tutor-lms-laravel/
 │   ├── Providers/                # Service providers (AdminPanelServiceProvider, AppServiceProvider)
 │   ├── Services/                 # Gateway services (AiGateway, EntitlementService, PdfService)
 │   └── ValueObjects/             # Value objects (Money with minor units and Bengali numerals)
+├── art/                          # Visual vector showcases, previews & mockups
 ├── config/                       # Published package & system configurations
 ├── database/
 │   ├── factories/                # Model factories for testing and seeding
@@ -246,7 +276,7 @@ The data layer is architected with ULID public identifiers, integer minor unit f
 #### Prerequisites:
 - PHP 8.3 or higher (with `pdo_mysql`, `mbstring`, `intl`, `gd`, `bcmath`, `curl`)
 - Composer 2.7+
-- Node.js 20+ & npm (for Livewire/Vite frontend assets)
+- Node.js 20+ &amp; npm (for Livewire/Vite frontend assets)
 - MySQL 8.0+ or SQLite for local dev
 - Redis 7.0+
 
@@ -345,6 +375,26 @@ All commits and pull requests trigger automated GitHub Actions workflows (`.gith
 4. Strict code style check (`pint --test`).
 5. Static analysis at Level 8 (`phpstan analyse`).
 6. Complete feature and regression test suite (`pest`).
+
+---
+
+## 🤝 Let's Connect & Collaborate
+
+I am open to **Senior Remote Full-Stack Roles**, **AI Platform Architecture Contracts**, and **Enterprise Technical Advisory**.
+
+- **Timezone:** UTC+6 (Dhaka / Rangpur, Bangladesh) — Flexible overlap with US, UK, and European business hours.
+- **Delivery Mode:** Async-ready, Slack, Discord, Jira, GitHub, and production-first accountability.
+
+| Channel | Address / Handle | Quick Action |
+|---|---|:---:|
+| 🌐 **Primary Portfolio** | [imrandev.bd](https://imrandev.bd/) | [Visit Site ↗](https://imrandev.bd/) |
+| 📦 **Packagist Packages** | [packagist.org/packages/imrandevbd/](https://packagist.org/packages/imrandevbd/) | [View Packages ↗](https://packagist.org/packages/imrandevbd/) |
+| 💼 **LinkedIn Profile** | [linkedin.com/in/imranbru99](https://linkedin.com/in/imranbru99) | [Connect ↗](https://linkedin.com/in/imranbru99) |
+| 🐙 **GitHub Profile** | [github.com/imranbru99](https://github.com/imranbru99) | [Follow ↗](https://github.com/imranbru99) |
+| 💬 **WhatsApp Direct** | [+880 1576-918420](http://wa.me/+8801576918420) | [Chat Now ↗](http://wa.me/+8801576918420) |
+| 📧 **Direct Email** | [me@imrandev.bd](mailto:me@imrandev.bd) | [Send Email ↗](mailto:me@imrandev.bd) |
+| 🐦 **X (Twitter)** | [@imrandev_bd](https://x.com/imrandev_bd) | [Follow ↗](https://x.com/imrandev_bd) |
+| 📺 **YouTube Tech** | [@ImranDevBD](https://youtube.com/@ImranDevBD) | [Subscribe ↗](https://youtube.com/@ImranDevBD) |
 
 ---
 

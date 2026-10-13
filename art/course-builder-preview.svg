@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+  </style>
+
+  <rect width="1200" height="680" fill="url(#cbBg)" rx="16" />
+
+  <!-- Builder Top Header -->
+  <rect width="1200" height="58" fill="#0f172a" rx="16" />
+  <g transform="translate(24, 20)">
+    <text class="sans" font-size="14" font-weight="700" fill="#f8fafc">🛠️ Course Studio &amp; Curriculum Builder</text>
+    <text x="320" class="sans" font-size="13" fill="#64748b">কোর্স: লার্যাভেল ১২ ফুল-স্ট্যাক বুটক্যাম্প · অটোরক্ষা সক্রিয় (Saved)</text>
+
+    <!-- Header Actions -->
+    <rect x="760" y="-8" width="130" height="34" rx="8" fill="url(#aiGrad)" />
+    <text x="825" y="14" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">✨ AI Co-Author</text>
+
+    <rect x="905" y="-8" width="120" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="965" y="14" class="sans" font-size="12" font-weight="600" fill="#cbd5e1" text-anchor="middle">👁 প্রিভিউ দেখুন</text>
+
+    <rect x="1040" y="-8" width="110" height="34" rx="8" fill="#10b981" />
+    <text x="1095" y="14" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">পাবলিশ করুন</text>
+  </g>
+
+  <!-- 3-Pane Layout -->
+  <!-- Pane 1: Left Curriculum Tree & Drag-Drop Items -->
+  <g transform="translate(24, 78)">
+    <rect width="360" height="576" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="32" class="sans" font-size="14" font-weight="700" fill="#ffffff">কারিকুলাম স্ট্রাকচার (Curriculum Tree)</text>
+    <text x="20" y="52" class="sans" font-size="11" fill="#94a3b8">SortableJS দ্বারা ড্র্যাগ-অ্যান্ড-ড্রপ করে সাজান</text>
+
+    <!-- Topic 1 -->
+    <g transform="translate(16, 70)">
+      <rect width="328" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="14" y="23" class="sans" font-size="12" font-weight="700" fill="#f8fafc">⋮⋮ সেকশন ১: আর্কিটেকচার পরিচিতি</text>
+      <text x="314" y="23" class="sans" font-size="11" fill="#6366f1" text-anchor="end">+ আইটেম</text>
+    </g>
+
+    <!-- Topic 1 Items -->
+    <g transform="translate(26, 115)">
+      <rect width="318" height="32" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8" />
+      <text x="12" y="21" class="sans" font-size="11" fill="#38bdf8">⋮⋮ ▶ পাঠ ১: রিকোয়েস্ট সাইকেল ও পাইপলাইন</text>
+
+      <rect y="38" width="318" height="32" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8" />
+      <text x="12" y="59" class="sans" font-size="11" fill="#38bdf8">⋮⋮ ▶ পাঠ ২: ডোমেন-ড্রিভেন ডিরেক্টরি সংগঠন</text>
+    </g>
+
+    <!-- Topic 2 (Active Selection) -->
+    <g transform="translate(16, 195)">
+      <rect width="328" height="36" rx="6" fill="#312e81" stroke="#6366f1" stroke-width="1" />
+      <text x="14" y="23" class="sans" font-size="12" font-weight="700" fill="#c7d2fe">⋮⋮ সেকশন ২: পেমেন্ট গেটওয়ে ইন্টিগ্রেশন</text>
+      <text x="314" y="23" class="sans" font-size="11" fill="#818cf8" text-anchor="end">+ আইটেম</text>
+    </g>
+
+    <g transform="translate(26, 240)">
+      <rect width="318" height="32" rx="6" fill="#4338ca" stroke="#818cf8" stroke-width="1" />
+      <text x="12" y="21" class="sans" font-size="11" font-weight="700" fill="#ffffff">⋮⋮ ▶ পাঠ ৩: বিকাশ ও নগদ টোকেনাইজড পেমেন্ট</text>
+
+      <rect y="38" width="318" height="32" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8" />
+      <text x="12" y="59" class="sans" font-size="11" fill="#fb7185">⋮⋮ ⚡ কুইজ ১: আইডেমপোটেন্সি ও সাইনড ওয়েবহুক</text>
+
+      <rect y="76" width="318" height="32" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8" />
+      <text x="12" y="97" class="sans" font-size="11" fill="#34d399">⋮⋮ 📝 অ্যাসাইনমেন্ট: পেমেন্ট ড্রাইভার বিল্ড করুন</text>
+    </g>
+
+    <!-- Add Section Button -->
+    <g transform="translate(16, 520)">
+      <rect width="328" height="36" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="4 4" />
+      <text x="164" y="23" class="sans" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">+ নতুন সেকশন যুক্ত করুন (Add Topic)</text>
+    </g>
+  </g>
+
+  <!-- Pane 2: Center Item Editor (Active Lesson Editor) -->
+  <g transform="translate(400, 78)">
+    <rect width="470" height="576" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="24" y="32" class="sans" font-size="14" font-weight="700" fill="#ffffff">আইটেম এডিটর (Item Editor)</text>
+    <text x="24" y="50" class="sans" font-size="11" fill="#94a3b8">পাঠ ৩: বিকাশ ও নগদ টোকেনাইজড পেমেন্ট</text>
+
+    <!-- Form Inputs -->
+    <g transform="translate(24, 70)">
+      <text class="sans" font-size="11" font-weight="600" fill="#cbd5e1">লেসন টাইটেল (Lesson Title)</text>
+      <rect y="8" width="422" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="31" class="sans" font-size="12" fill="#ffffff">বিকাশ ও নগদ টোকেনাইজড পেমেন্ট আর্কিটেকচার</text>
+
+      <text y="65" class="sans" font-size="11" font-weight="600" fill="#cbd5e1">ভিডিও সোর্স (Video Provider)</text>
+      <rect y="73" width="422" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="96" class="sans" font-size="12" fill="#ffffff">Bunny.net Stream / HLS (Signed URL)</text>
+
+      <text y="130" class="sans" font-size="11" font-weight="600" fill="#cbd5e1">ভিডিও আইডি / ইউআরএল</text>
+      <rect y="138" width="422" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="161" class="sans" font-size="12" fill="#94a3b8">https://video.bunnycdn.com/play/tf-vid-09214</text>
+
+      <text y="195" class="sans" font-size="11" font-weight="600" fill="#cbd5e1">লেসন নোটস ও কনটেন্ট (TipTap Rich Editor)</text>
+      <rect y="203" width="422" height="150" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="228" class="sans" font-size="12" fill="#cbd5e1">এই পাঠে আমরা শিখব কীভাবে টোকেনাইজড পেমেন্ট বাস্তবায়ন করতে হয়:</text>
+      <text x="12" y="252" class="sans" font-size="11" fill="#94a3b8">১. কাস্টমার রেজিস্ট্রেশন ও টোকেন ক্রিয়েশন</text>
+      <text x="12" y="272" class="sans" font-size="11" fill="#94a3b8">২. পেমেন্ট ভেরিফিকেশন কলব্যাক হ্যান্ডলিং</text>
+      <text x="12" y="292" class="sans" font-size="11" fill="#94a3b8">৩. আইডেমপোটেন্ট ডাটাবেজ স্টেট ট্রানজাকশন</text>
+
+      <!-- Drip & Settings Toggles -->
+      <g transform="translate(0, 375)">
+        <text class="sans" font-size="11" font-weight="600" fill="#cbd5e1">ড্রিপ রুল (Drip Schedule)</text>
+        <rect y="8" width="200" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="12" y="28" class="sans" font-size="11" fill="#38bdf8">ভর্তির ২ দিন পর আনলক</text>
+
+        <text x="220" class="sans" font-size="11" font-weight="600" fill="#cbd5e1">ফ্রি প্রিভিউ (Preview)</text>
+        <rect x="220" y="8" width="202" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="232" y="28" class="sans" font-size="11" fill="#10b981">সক্রিয় (Allowed for Guests)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Pane 3: Right AI Studio Modal / Content Bank Drawer -->
+  <g transform="translate(886, 78)">
+    <rect width="290" height="576" rx="12" fill="#1e1b4b" fill-opacity="0.9" stroke="#6366f1" stroke-width="1.5" />
+    <text x="20" y="32" class="sans" font-size="14" font-weight="700" fill="#c7d2fe">✨ AI Hub Studio Copilot</text>
+    <text x="20" y="50" class="sans" font-size="11" fill="#a5b4fc">Provider: Claude 3.5 Sonnet / Gemini Pro</text>
+
+    <!-- Generation Modes -->
+    <g transform="translate(16, 70)">
+      <rect width="258" height="48" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="1" />
+      <text x="12" y="22" class="sans" font-size="11" font-weight="700" fill="#ffffff">🤖 অটো-কুইজ জেনারেটর</text>
+      <text x="12" y="38" class="sans" font-size="10" fill="#cbd5e1">এই পাঠের ভিত্তিতে ৫টি কুইজ তৈরি করুন</text>
+
+      <rect y="58" width="258" height="48" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="80" class="sans" font-size="11" font-weight="700" fill="#ffffff">📝 অ্যাসাইনমেন্ট ও রুব্রিক তৈরি</text>
+      <text x="12" y="96" class="sans" font-size="10" fill="#94a3b8">গ্রেডিং ক্রাইটেরিয়া সহ অ্যাসাইনমেন্ট</text>
+
+      <rect y="116" width="258" height="48" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="138" class="sans" font-size="11" font-weight="700" fill="#ffffff">🌐 দ্বিভাষিক অনুবাদ (Translate)</text>
+      <text x="12" y="154" class="sans" font-size="10" fill="#94a3b8">বাংলা থেকে ইংরেজি অনুবাদ প্রিভিউ</text>
+
+      <rect y="174" width="258" height="48" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="196" class="sans" font-size="11" font-weight="700" fill="#ffffff">🔍 এসইও ও মেটাডাটা অপ্টিমাইজেশন</text>
+      <text x="12" y="212" class="sans" font-size="10" fill="#94a3b8">ইউনিকোড স্ল্যাগ ও JSON-LD স্কিমা</text>
+    </g>
+
+    <!-- AI Output Preview Card -->
+    <g transform="translate(16, 320)">
+      <rect width="258" height="180" rx="8" fill="#0f172a" stroke="#4f46e5" stroke-width="1" />
+      <text x="12" y="24" class="sans" font-size="11" font-weight="700" fill="#38bdf8">জেনারেট হওয়া কুইজ প্রিভিউ:</text>
+      <text x="12" y="44" class="sans" font-size="10" fill="#cbd5e1">প্রশ্ন ১: বিকাশ এগ্রিমেন্ট পেমেন্টে</text>
+      <text x="12" y="60" class="sans" font-size="10" fill="#cbd5e1">কোন এপিআই দিয়ে রিঅ্যাকারেন্স চার্জ হয়?</text>
+      <text x="12" y="82" class="sans" font-size="9" fill="#34d399">✓ অপশন A: executePayment API</text>
+      <text x="12" y="98" class="sans" font-size="9" fill="#94a3b8">✗ অপশন B: queryPayment API</text>
+      <text x="12" y="114" class="sans" font-size="9" fill="#94a3b8">✗ অপশন C: capturePayment API</text>
+      
+      <rect x="12" y="136" width="234" height="30" rx="6" fill="#10b981" />
+      <text x="129" y="155" class="sans" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">কারিকুলামে ইনসার্ট করুন →</text>
+    </g>
+  </g>
+</svg>

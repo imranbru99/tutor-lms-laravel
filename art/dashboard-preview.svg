@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="chartGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="chartGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+    .txt-muted { fill: #94a3b8; font-size: 13px; }
+    .txt-val { fill: #ffffff; font-size: 26px; font-weight: 700; }
+    .txt-badge { font-size: 11px; font-weight: 600; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#dbBg)" rx="16" />
+
+  <!-- Top Navigation Bar -->
+  <rect width="1200" height="64" fill="#0f172a" fill-opacity="0.9" rx="16" />
+  <circle cx="36" cy="32" r="14" fill="#6366f1" />
+  <text x="36" y="37" class="sans" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">T</text>
+  <text x="60" y="38" class="sans" font-size="18" font-weight="700" fill="#ffffff">Tutor<tspan fill="#818cf8">Forge</tspan> Admin</text>
+  
+  <!-- Panel switch badges -->
+  <g transform="translate(240, 18)">
+    <rect width="80" height="28" rx="6" fill="#4f46e5" fill-opacity="0.3" stroke="#6366f1" stroke-width="1" />
+    <text x="40" y="19" class="sans" font-size="12" font-weight="600" fill="#c7d2fe" text-anchor="middle">/admin</text>
+
+    <rect x="90" width="105" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="142" y="19" class="sans" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">/instructor</text>
+
+    <rect x="205" width="70" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="240" y="19" class="sans" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">/org</text>
+  </g>
+
+  <!-- User profile mock in top right -->
+  <g transform="translate(1020, 18)">
+    <rect width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="16" cy="14" r="10" fill="#10b981" />
+    <text x="32" y="19" class="sans" font-size="12" font-weight="600" fill="#f8fafc">Super Administrator</text>
+  </g>
+
+  <!-- Sidebar -->
+  <g transform="translate(0, 64)">
+    <rect width="210" height="616" fill="#0f172a" fill-opacity="0.5" stroke="#1e293b" stroke-width="1" />
+    <g transform="translate(16, 20)">
+      <rect width="178" height="36" rx="8" fill="#6366f1" fill-opacity="0.2" />
+      <text x="14" y="23" class="sans" font-size="13" font-weight="600" fill="#818cf8">📊 Dashboard</text>
+      
+      <text x="14" y="65" class="sans" font-size="13" fill="#94a3b8">📚 Courses &amp; Builder</text>
+      <text x="14" y="105" class="sans" font-size="13" fill="#94a3b8">📝 Quizzes &amp; Banks</text>
+      <text x="14" y="145" class="sans" font-size="13" fill="#94a3b8">🎓 Enrollments &amp; Drip</text>
+      <text x="14" y="185" class="sans" font-size="13" fill="#94a3b8">💳 Orders &amp; Invoices</text>
+      <text x="14" y="225" class="sans" font-size="13" fill="#94a3b8">💸 Instructor Payouts</text>
+      <text x="14" y="265" class="sans" font-size="13" fill="#94a3b8">📜 Certificates (PDF)</text>
+      <text x="14" y="305" class="sans" font-size="13" fill="#94a3b8">🤖 AI Hub Studio</text>
+      <text x="14" y="345" class="sans" font-size="13" fill="#94a3b8">⚙️ Payment Gateways</text>
+      <text x="14" y="385" class="sans" font-size="13" fill="#94a3b8">🛡️ Roles &amp; Audit Logs</text>
+    </g>
+  </g>
+
+  <!-- Main Content Area -->
+  <g transform="translate(230, 84)">
+    <!-- 4 Stats Cards -->
+    <!-- Card 1: Total Revenue -->
+    <g transform="translate(0, 0)">
+      <rect width="220" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="28" class="sans txt-muted">Total Net Sales</text>
+      <text x="18" y="62" class="sans txt-val">৳৪,৫৮,২০০</text>
+      <text x="18" y="90" class="sans" font-size="11" fill="#34d399">↑ +24.8% <tspan fill="#64748b">vs last month ($3,818 USD)</tspan></text>
+    </g>
+
+    <!-- Card 2: Active Learners -->
+    <g transform="translate(240, 0)">
+      <rect width="220" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="28" class="sans txt-muted">Active Learners</text>
+      <text x="18" y="62" class="sans txt-val">12,480</text>
+      <text x="18" y="90" class="sans" font-size="11" fill="#38bdf8">↑ +1,240 <tspan fill="#64748b">new enrollments this week</tspan></text>
+    </g>
+
+    <!-- Card 3: Completion Rate -->
+    <g transform="translate(480, 0)">
+      <rect width="220" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="28" class="sans txt-muted">Avg. Completion Rate</text>
+      <text x="18" y="62" class="sans txt-val">74.2%</text>
+      <text x="18" y="90" class="sans" font-size="11" fill="#a78bfa">★ 1,890 <tspan fill="#64748b">verified certificates issued</tspan></text>
+    </g>
+
+    <!-- Card 4: AI Spend & Health -->
+    <g transform="translate(720, 0)">
+      <rect width="220" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="28" class="sans txt-muted">AI Hub Spend</text>
+      <text x="18" y="62" class="sans txt-val">$42.80</text>
+      <text x="18" y="90" class="sans" font-size="11" fill="#fb923c">● Budget Safe <tspan fill="#64748b">($200 limit · 13 providers)</tspan></text>
+    </g>
+
+    <!-- Main Chart Panel -->
+    <g transform="translate(0, 130)">
+      <rect width="580" height="280" rx="14" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="24" y="32" class="sans" font-size="16" font-weight="700" fill="#ffffff">Revenue &amp; Enrollment Trajectory</text>
+      <text x="24" y="52" class="sans" font-size="12" fill="#94a3b8">Hourly telemetry through Laravel Horizon &amp; Redis</text>
+
+      <!-- Revenue Chart Shape -->
+      <path d="M 40 230 C 120 210, 180 180, 240 190 C 300 200, 360 140, 420 120 C 480 100, 520 80, 550 70 L 550 250 L 40 250 Z" fill="url(#chartGrad1)" />
+      <path d="M 40 230 C 120 210, 180 180, 240 190 C 300 200, 360 140, 420 120 C 480 100, 520 80, 550 70" fill="none" stroke="#6366f1" stroke-width="3" />
+
+      <!-- Enrollment Trend -->
+      <path d="M 40 240 C 120 225, 200 210, 280 200 C 360 190, 440 160, 550 130" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 4" />
+      <circle cx="550" cy="70" r="5" fill="#818cf8" />
+    </g>
+
+    <!-- Top Performing Courses Table -->
+    <g transform="translate(600, 130)">
+      <rect width="340" height="280" rx="14" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="20" y="32" class="sans" font-size="15" font-weight="700" fill="#ffffff">Top Performing Courses</text>
+      
+      <!-- Row 1 -->
+      <g transform="translate(20, 60)">
+        <rect width="300" height="42" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="24" class="sans" font-size="12" font-weight="600" fill="#f8fafc">লার্যাভেল ১২ ফুল-স্ট্যাক মাস্টারক্লাস</text>
+        <text x="285" y="24" class="sans" font-size="11" font-weight="700" fill="#34d399" text-anchor="end">৳২,৪৫,০০০</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(20, 110)">
+        <rect width="300" height="42" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="24" class="sans" font-size="12" font-weight="600" fill="#f8fafc">Advanced Livewire 3 &amp; Alpine.js</text>
+        <text x="285" y="24" class="sans" font-size="11" font-weight="700" fill="#34d399" text-anchor="end">৳১,২০,০০০</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(20, 160)">
+        <rect width="300" height="42" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="24" class="sans" font-size="12" font-weight="600" fill="#f8fafc">Building Agentic AI in PHP</text>
+        <text x="285" y="24" class="sans" font-size="11" font-weight="700" fill="#34d399" text-anchor="end">৳৯৩,২০০</text>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(20, 210)">
+        <rect width="300" height="42" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="24" class="sans" font-size="12" font-weight="600" fill="#f8fafc">Docker &amp; Kubernetes for Devs</text>
+        <text x="285" y="24" class="sans" font-size="11" font-weight="700" fill="#34d399" text-anchor="end">৳৭৪,০০০</text>
+      </g>
+    </g>
+
+    <!-- Bottom Gateway Health & Webhook Feed -->
+    <g transform="translate(0, 425)">
+      <rect width="940" height="145" rx="14" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="24" y="30" class="sans" font-size="15" font-weight="700" fill="#ffffff">Live Payment Gateway Stream &amp; Idempotent Webhooks</text>
+      
+      <g transform="translate(24, 48)">
+        <!-- Stream Item 1 -->
+        <rect width="280" height="68" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#fb7185">bKash (Tokenized Agreement)</text>
+        <text x="14" y="44" class="sans" font-size="11" fill="#94a3b8">trx_9A2K74X9 · ৳3,500 BDT</text>
+        <text x="14" y="58" class="sans" font-size="10" fill="#34d399">✓ Verified · Auto-enrolled in 24ms</text>
+
+        <!-- Stream Item 2 -->
+        <rect x="295" width="280" height="68" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="309" y="24" class="sans" font-size="12" font-weight="700" fill="#818cf8">Stripe PaymentIntent</text>
+        <text x="309" y="44" class="sans" font-size="11" fill="#94a3b8">pi_3M749xX... · $49.00 USD</text>
+        <text x="309" y="58" class="sans" font-size="10" fill="#34d399">✓ Verified · Signed Webhook ACK</text>
+
+        <!-- Stream Item 3 -->
+        <rect x="590" width="300" height="68" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="604" y="24" class="sans" font-size="12" font-weight="700" fill="#38bdf8">SSLCommerz (Card / MFS)</text>
+        <text x="604" y="44" class="sans" font-size="11" fill="#94a3b8">tran_ssl_0921 · ৳4,200 BDT</text>
+        <text x="604" y="58" class="sans" font-size="10" fill="#34d399">✓ IPN Reconciled · Zero Mismatch</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="primaryBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+  </style>
+
+  <rect width="1200" height="680" fill="url(#lpBg)" rx="16" />
+
+  <!-- Navbar -->
+  <g transform="translate(60, 24)">
+    <circle cx="16" cy="16" r="14" fill="#6366f1" />
+    <text x="16" y="21" class="sans" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">T</text>
+    <text x="38" y="22" class="sans" font-size="18" font-weight="700" fill="#ffffff">Tutor<tspan fill="#818cf8">Forge</tspan></text>
+
+    <!-- Nav Links -->
+    <text x="240" y="21" class="sans" font-size="13" font-weight="600" fill="#f8fafc">কোর্স ক্যাটালগ (Courses)</text>
+    <text x="440" y="21" class="sans" font-size="13" fill="#94a3b8">লার্নিং পাথ (Bundles)</text>
+    <text x="610" y="21" class="sans" font-size="13" fill="#94a3b8">সাবস্ক্রিপশন (Pricing)</text>
+    <text x="790" y="21" class="sans" font-size="13" fill="#94a3b8">সার্টিফিকেট যাচাই</text>
+
+    <!-- Language & Login Button -->
+    <rect x="940" y="2" width="65" height="30" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="972" y="21" class="sans" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">বাংলা / EN</text>
+
+    <rect x="1015" y="0" width="85" height="34" rx="8" fill="url(#primaryBtn)" />
+    <text x="1057" y="22" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">লগইন করুন</text>
+  </g>
+
+  <!-- Hero Header -->
+  <g transform="translate(60, 95)" text-anchor="middle">
+    <text x="540" y="40" class="sans" font-size="34" font-weight="800" fill="#ffffff">আধুনিক প্রযুক্তিতে ক্যারিয়ার গড়ুন — এআই-চালিত লার্নিং প্ল্যাটফর্ম</text>
+    <text x="540" y="70" class="sans" font-size="16" fill="#94a3b8">বিশ্বমানের কোর্সে ভর্তি হোন বিকাশ, নগদ, রকেট অথবা কার্ড দিয়ে। লাইভ ক্লাস, কুইজ এবং ইউনিকোড সার্টিফিকেট।</text>
+  </g>
+
+  <!-- Search Bar with Filters -->
+  <g transform="translate(200, 190)">
+    <rect width="800" height="48" rx="24" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="30" y="30" class="sans" font-size="14" fill="#64748b">🔍 কোর্স, বিষয় বা প্রশিক্ষক খুঁজুন (যেমন: লার্যাভেল, পাইথন, ডকার)...</text>
+    <rect x="680" y="6" width="112" height="36" rx="18" fill="url(#primaryBtn)" />
+    <text x="736" y="28" class="sans" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">অনুসন্ধান</text>
+  </g>
+
+  <!-- Category Pills -->
+  <g transform="translate(230, 255)">
+    <rect width="85" height="30" rx="15" fill="#6366f1" />
+    <text x="42" y="19" class="sans" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">সব কোর্স</text>
+
+    <rect x="95" width="130" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="160" y="19" class="sans" font-size="12" fill="#94a3b8" text-anchor="middle">Laravel &amp; PHP</text>
+
+    <rect x="235" width="145" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="307" y="19" class="sans" font-size="12" fill="#94a3b8" text-anchor="middle">Full-Stack JavaScript</text>
+
+    <rect x="390" width="140" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="460" y="19" class="sans" font-size="12" fill="#94a3b8" text-anchor="middle">Agentic AI &amp; LLM</text>
+
+    <rect x="540" width="125" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="602" y="19" class="sans" font-size="12" fill="#94a3b8" text-anchor="middle">DevOps &amp; Cloud</text>
+  </g>
+
+  <!-- 3 Featured Course Cards Grid -->
+  <g transform="translate(60, 310)">
+    <!-- Course 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="330" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <!-- Course banner mockup -->
+      <rect width="340" height="150" rx="16" fill="#1e1b4b" />
+      <text x="24" y="60" class="sans" font-size="20" font-weight="800" fill="#c7d2fe">Laravel 12</text>
+      <text x="24" y="85" class="sans" font-size="13" font-weight="600" fill="#818cf8">মাস্টারক্লাস: স্ক্র্যাচ থেকে প্রো</text>
+      <rect x="24" y="105" width="85" height="22" rx="11" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1" />
+      <text x="66" y="120" class="sans" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">বাংলা মিডিয়াম</text>
+
+      <!-- Details -->
+      <g transform="translate(20, 170)">
+        <text y="15" class="sans" font-size="15" font-weight="700" fill="#ffffff">লার্যাভেল ১২ সম্পূর্ণ প্রফেশনাল বুটক্যাম্প</text>
+        <text y="38" class="sans" font-size="12" fill="#94a3b8">প্রশিক্ষক: জুবায়ের হোসেন · ৪৮ পাঠ · ৫ কুইজ</text>
+        <text y="62" class="sans" font-size="12" fill="#eab308">★★★★★ <tspan fill="#64748b">(৪.৯ · ১২০ রিভিউ)</tspan></text>
+        
+        <!-- Price & Buy Button -->
+        <text y="105" class="sans" font-size="20" font-weight="800" fill="#34d399">৳২,৫০০ <tspan font-size="13" font-weight="400" fill="#64748b">($22 USD)</tspan></text>
+        <rect x="190" y="80" width="110" height="34" rx="8" fill="url(#primaryBtn)" />
+        <text x="245" y="102" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">ভর্তি হোন →</text>
+      </g>
+    </g>
+
+    <!-- Course 2 -->
+    <g transform="translate(370, 0)">
+      <rect width="340" height="330" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <rect width="340" height="150" rx="16" fill="#064e3b" />
+      <text x="24" y="60" class="sans" font-size="20" font-weight="800" fill="#a7f3d0">PHP Agentic AI</text>
+      <text x="24" y="85" class="sans" font-size="13" font-weight="600" fill="#34d399">Building Autonomous LLM Hubs</text>
+      <rect x="24" y="105" width="95" height="22" rx="11" fill="#6366f1" fill-opacity="0.3" stroke="#6366f1" stroke-width="1" />
+      <text x="71" y="120" class="sans" font-size="10" font-weight="700" fill="#818cf8" text-anchor="middle">English &amp; বাংলা</text>
+
+      <g transform="translate(20, 170)">
+        <text y="15" class="sans" font-size="15" font-weight="700" fill="#ffffff">Laravel AI Hub &amp; Autonomous Agents</text>
+        <text y="38" class="sans" font-size="12" fill="#94a3b8">Instructor: Imran Hossain · 32 Lessons</text>
+        <text y="62" class="sans" font-size="12" fill="#eab308">★★★★★ <tspan fill="#64748b">(5.0 · 84 Reviews)</tspan></text>
+        
+        <text y="105" class="sans" font-size="20" font-weight="800" fill="#34d399">৳৩,০০০ <tspan font-size="13" font-weight="400" fill="#64748b">($26 USD)</tspan></text>
+        <rect x="190" y="80" width="110" height="34" rx="8" fill="url(#primaryBtn)" />
+        <text x="245" y="102" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Enroll Now →</text>
+      </g>
+    </g>
+
+    <!-- Course 3 -->
+    <g transform="translate(740, 0)">
+      <rect width="340" height="330" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <rect width="340" height="150" rx="16" fill="#1e293b" />
+      <text x="24" y="60" class="sans" font-size="20" font-weight="800" fill="#38bdf8">Livewire 3 + Alpine</text>
+      <text x="24" y="85" class="sans" font-size="13" font-weight="600" fill="#7dd3fc">SPA-Feel Reactive Web Apps</text>
+      <rect x="24" y="105" width="80" height="22" rx="11" fill="#e11d48" fill-opacity="0.3" stroke="#e11d48" stroke-width="1" />
+      <text x="64" y="120" class="sans" font-size="10" font-weight="700" fill="#fb7185" text-anchor="middle">Best Seller</text>
+
+      <g transform="translate(20, 170)">
+        <text y="15" class="sans" font-size="15" font-weight="700" fill="#ffffff">লাইভওয়্যার ৩ ইন্টারঅ্যাক্টিভ ড্যাশবোর্ড</text>
+        <text y="38" class="sans" font-size="12" fill="#94a3b8">প্রশিক্ষক: তানভীর আহমেদ · ২৪ পাঠ · ৩ প্রজেক্ট</text>
+        <text y="62" class="sans" font-size="12" fill="#eab308">★★★★★ <tspan fill="#64748b">(৪.৮ · ৯২ রিভিউ)</tspan></text>
+        
+        <text y="105" class="sans" font-size="20" font-weight="800" fill="#34d399">৳১,৮০০ <tspan font-size="13" font-weight="400" fill="#64748b">($16 USD)</tspan></text>
+        <rect x="190" y="80" width="110" height="34" rx="8" fill="url(#primaryBtn)" />
+        <text x="245" y="102" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">ভর্তি হোন →</text>
+      </g>
+    </g>
+  </g>
+</svg>

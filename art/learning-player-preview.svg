@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="glowBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; }
+  </style>
+
+  <rect width="1200" height="680" fill="url(#pBg)" rx="16" />
+
+  <!-- Player Header -->
+  <rect width="1200" height="54" fill="#0f172a" rx="16" />
+  <g transform="translate(24, 18)">
+    <text class="sans" font-size="14" font-weight="700" fill="#f8fafc">← কোর্সে ফিরে যান (Back)</text>
+    <text x="210" class="sans" font-size="14" font-weight="600" fill="#94a3b8">|</text>
+    <text x="230" class="sans" font-size="14" font-weight="600" fill="#cbd5e1">লার্যাভেল ১২ ফুল-স্ট্যাক মাস্টারক্লাস · পাঠ ১৪: অ্যাকশন ও সার্ভিস লেয়ার আর্কিটেকচার</text>
+
+    <!-- Right-side mode & progress indicator -->
+    <rect x="910" y="-6" width="120" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="970" y="13" class="sans" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">⚡ মডার্ন মোড (Active)</text>
+
+    <text x="1050" y="14" class="sans" font-size="13" font-weight="700" fill="#34d399">৭২% সম্পন্ন</text>
+  </g>
+
+  <!-- Left Main Video Player + Notes Workspace -->
+  <g transform="translate(24, 74)">
+    <!-- Video Player Simulation -->
+    <rect width="820" height="420" rx="12" fill="#020617" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Video Content Simulation: Code Screen -->
+    <g transform="translate(40, 40)">
+      <text class="sans" font-size="16" font-family="monospace" fill="#38bdf8">&lt;?php declare(strict_types=1);</text>
+      <text y="30" class="sans" font-size="15" font-family="monospace" fill="#818cf8">namespace App\Actions\Courses;</text>
+      <text y="70" class="sans" font-size="15" font-family="monospace" fill="#f8fafc">final class CreateCourseAction</text>
+      <text y="100" class="sans" font-size="15" font-family="monospace" fill="#f8fafc">{</text>
+      <text y="130" class="sans" font-size="14" font-family="monospace" fill="#a5b4fc">    public function execute(CourseData $data): Course</text>
+      <text y="160" class="sans" font-size="14" font-family="monospace" fill="#94a3b8">    {</text>
+      <text y="190" class="sans" font-size="14" font-family="monospace" fill="#34d399">        return DB::transaction(fn () => Course::create($data->toArray()));</text>
+      <text y="220" class="sans" font-size="14" font-family="monospace" fill="#94a3b8">    }</text>
+      <text y="250" class="sans" font-size="15" font-family="monospace" fill="#f8fafc">}</text>
+    </g>
+
+    <!-- Watermark protection layer -->
+    <text x="790" y="60" class="sans" font-size="11" fill="#ffffff" fill-opacity="0.15" text-anchor="end">learner@tutorforge.test (203.0.113.19)</text>
+
+    <!-- Video Controls Bar -->
+    <g transform="translate(0, 375)">
+      <rect width="820" height="45" rx="0" fill="#0f172a" fill-opacity="0.9" />
+      <!-- Progress Bar -->
+      <rect y="-4" width="820" height="4" fill="#334155" />
+      <rect y="-4" width="480" height="4" fill="#6366f1" />
+      <circle cx="480" cy="-2" r="5" fill="#818cf8" />
+      <!-- Controls -->
+      <text x="24" y="28" class="sans" font-size="16" fill="#ffffff">⏸</text>
+      <text x="60" y="27" class="sans" font-size="12" fill="#cbd5e1">14:20 / 22:45</text>
+      <text x="630" y="27" class="sans" font-size="12" fill="#94a3b8">1.25x · CC (বাংলা) · 1080p · ⛶</text>
+    </g>
+
+    <!-- Lesson Tabs: Notes, AI Tutor, Resources, Q&A -->
+    <g transform="translate(0, 435)">
+      <rect width="820" height="150" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <!-- Tabs -->
+      <text x="24" y="32" class="sans" font-size="14" font-weight="700" fill="#6366f1">📝 লেসন নোটস (Notes)</text>
+      <text x="190" y="32" class="sans" font-size="14" fill="#94a3b8">🤖 AI টিউটর চ্যাট (Ask AI)</text>
+      <text x="370" y="32" class="sans" font-size="14" fill="#94a3b8">📁 রিসোর্স ডাউনলোড (Files)</text>
+      <text x="560" y="32" class="sans" font-size="14" fill="#94a3b8">💬 প্রশ্ন ও উত্তর (Q&amp;A)</text>
+      
+      <!-- Note Entry Box -->
+      <rect x="24" y="50" width="770" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="40" y="78" class="sans" font-size="13" fill="#cbd5e1">📌 14:20 — অ্যাকশন প্যাটার্ন ব্যবহারের প্রধান সুবিধা হল টেস্ট করা সহজ এবং কন্ট্রোলারে অতিরিক্ত লজিক থাকে না।</text>
+      <text x="40" y="105" class="sans" font-size="11" fill="#64748b">অটো-সেভ হয়েছে (Saved to personal study guide) · PDF স্টাডি শিট হিসেবে এক্সপোর্ট করা যাবে</text>
+    </g>
+  </g>
+
+  <!-- Right Sidebar: Curriculum Tree & Drip Unlocks -->
+  <g transform="translate(860, 74)">
+    <rect width="316" height="570" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="32" class="sans" font-size="15" font-weight="700" fill="#ffffff">কোর্স সূচিপত্র (Curriculum)</text>
+    <text x="20" y="52" class="sans" font-size="12" fill="#94a3b8">৩৪/৪৮ পাঠ সম্পন্ন (৭২%)</text>
+
+    <!-- Section 1 -->
+    <g transform="translate(16, 75)">
+      <rect width="284" height="34" rx="6" fill="#1e293b" />
+      <text x="12" y="22" class="sans" font-size="12" font-weight="700" fill="#f8fafc">সেকশন ১: ফাউন্ডেশন ও সেটআপ</text>
+      <text x="268" y="22" class="sans" font-size="11" fill="#34d399" text-anchor="end">✓ ৪/৪</text>
+    </g>
+
+    <!-- Section 2 (Active) -->
+    <g transform="translate(16, 120)">
+      <rect width="284" height="34" rx="6" fill="#312e81" stroke="#6366f1" stroke-width="1" />
+      <text x="12" y="22" class="sans" font-size="12" font-weight="700" fill="#c7d2fe">সেকশন ২: ডোমেন অ্যাকশন ও DTO</text>
+      <text x="268" y="22" class="sans" font-size="11" fill="#a5b4fc" text-anchor="end">৩/৫</text>
+
+      <!-- Items -->
+      <g transform="translate(8, 44)">
+        <!-- Item 1 -->
+        <rect width="268" height="34" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="22" class="sans" font-size="11" fill="#34d399">✓ পাঠ ১২: ইনপুট ভ্যালিডেশন DTO</text>
+
+        <!-- Item 2 -->
+        <rect y="40" width="268" height="34" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="62" class="sans" font-size="11" fill="#34d399">✓ পাঠ ১৩: মানি ভ্যালু অবজেক্ট</text>
+
+        <!-- Item 3 (Current) -->
+        <rect y="80" width="268" height="34" rx="6" fill="#4338ca" stroke="#818cf8" stroke-width="1" />
+        <text x="12" y="102" class="sans" font-size="11" font-weight="700" fill="#ffffff">▶ পাঠ ১৪: অ্যাকশন ও সার্ভিস লেয়ার</text>
+
+        <!-- Item 4 (Quiz) -->
+        <rect y="120" width="268" height="34" rx="6" fill="#1e293b" fill-opacity="0.5" />
+        <text x="12" y="142" class="sans" font-size="11" fill="#cbd5e1">⚡ কুইজ ২: আর্কিটেকচার এসেসমেন্ট</text>
+
+        <!-- Item 5 (Drip Locked) -->
+        <rect y="160" width="268" height="34" rx="6" fill="#0f172a" stroke="#334155" stroke-dasharray="3 3" />
+        <text x="12" y="182" class="sans" font-size="11" fill="#64748b">🔒 অ্যাসাইনমেন্ট: ই-কমার্স ইঞ্জিন (আনলক: ২ দিন পর)</text>
+      </g>
+    </g>
+
+    <!-- Bottom Action Button -->
+    <g transform="translate(16, 490)">
+      <rect width="284" height="42" rx="8" fill="url(#glowBtn)" />
+      <text x="142" y="26" class="sans" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">পাঠ সম্পন্ন করুন (Next Lesson) →</text>
+    </g>
+  </g>
+</svg>
